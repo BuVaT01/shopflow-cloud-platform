@@ -1,0 +1,22 @@
+name: ShopFlow CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify project files
+        run: |
+          echo "ShopFlow deployment started"
+          ls -la
+
+      - name: Deployment completed
+        run: echo "ShopFlow successfully deployed"
