@@ -1,0 +1,1 @@
+function showMessage(){document.getElementById("message").innerText="Web ilova muvaffaqiyatli deploy qilingan va masofadan foydalanishga tayyor.";}
