@@ -1,69 +1,56 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShopFlow Cloud Platform | Cloud Architecture</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopFlow Cloud | Architecture</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">ShopFlow Cloud</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a class="active" href="architecture.html">Cloud Architecture</a></li>
-    </ul>
-  </nav>
+  <aside class="sidebar">
+    <h2>ShopFlow</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="systems.html">ERP / CRM / WMS</a>
+    <a class="active" href="architecture.html">Cloud Architecture</a>
+    <a href="monitoring.html">Monitoring</a>
+    <a href="index.html">Logout</a>
+  </aside>
 
-  <header class="page-header architecture-header">
-    <h1>AWS asosidagi Cloud Network Architecture</h1>
-    <p>VPC, subnet, load balancer, monitoring va CI/CD yordamida xavfsiz cloud infratuzilma.</p>
-  </header>
+  <main class="content">
+    <header class="topbar">
+      <div>
+        <h1>Cloud Network Architecture</h1>
+        <p>VPC, subnet, gateway, load balancer va server qatlamlari orqali xavfsiz tarmoq oqimi</p>
+      </div>
+    </header>
 
-  <main class="section">
-    <div class="architecture-flow">
-      <div class="flow-box">Remote Users</div>
+    <section class="flow">
+      <div class="node">Remote Users</div>
       <div class="arrow">↓</div>
-      <div class="flow-box">DNS / Route 53</div>
+      <div class="node">DNS / Domain Resolution</div>
       <div class="arrow">↓</div>
-      <div class="flow-box">Internet Gateway</div>
+      <div class="node">Internet Gateway</div>
       <div class="arrow">↓</div>
-      <div class="flow-box">Application Load Balancer</div>
+      <div class="node">Application Load Balancer</div>
       <div class="arrow">↓</div>
-      <div class="flow-row">
-        <div class="flow-box">Web Server 1</div>
-        <div class="flow-box">Web Server 2</div>
+      <div class="split">
+        <div class="node">Web Server 1</div>
+        <div class="node">Web Server 2</div>
       </div>
       <div class="arrow">↓</div>
-      <div class="flow-box wide">Application Layer: ERP • CRM • WMS</div>
+      <div class="node wide">Application Layer: ERP • CRM • WMS</div>
       <div class="arrow">↓</div>
-      <div class="flow-box">Database Layer / RDS</div>
-    </div>
-
-    <section class="section mini">
-      <h2>Cloud komponentlari</h2>
-      <div class="cards three">
-        <div class="card"><h3>VPC</h3><p>Kompaniya tizimlari uchun ajratilgan virtual private cloud tarmog‘i.</p></div>
-        <div class="card"><h3>Public/Private Subnet</h3><p>Tashqi endpointlar va ichki serverlarni xavfsiz ajratish uchun ishlatiladi.</p></div>
-        <div class="card"><h3>Security Groups</h3><p>Portlar va trafik qoidalari orqali serverlarga kirishni nazorat qiladi.</p></div>
-        <div class="card"><h3>Load Balancer</h3><p>Kiruvchi so‘rovlarni bir nechta serverlar o‘rtasida taqsimlaydi.</p></div>
-        <div class="card"><h3>Auto Scaling</h3><p>Yuklama oshganda qo‘shimcha serverlarni avtomatik ishga tushiradi.</p></div>
-        <div class="card"><h3>CloudWatch</h3><p>CPU, trafik, log va tizim holatini real vaqt rejimida monitoring qiladi.</p></div>
-      </div>
+      <div class="node">Database Layer</div>
     </section>
 
-    <section class="section dashboard">
-      <h2>Monitoring Dashboard</h2>
-      <div class="dashboard-grid">
-        <div class="dash-card"><span>CPU Usage</span><strong>32%</strong><small>Optimallashtirilgan holat</small></div>
-        <div class="dash-card"><span>Response Time</span><strong>120ms</strong><small>Tezkor javob</small></div>
-        <div class="dash-card"><span>Security</span><strong>Active</strong><small>Firewall va HTTPS</small></div>
-        <div class="dash-card"><span>Deploy</span><strong>Passed</strong><small>GitHub + Vercel</small></div>
-      </div>
+    <section class="component-grid">
+      <div><h3>VPC</h3><p>Ajratilgan virtual private cloud tarmoq muhiti.</p></div>
+      <div><h3>Public Subnet</h3><p>Internetga chiqishi kerak bo‘lgan endpointlar uchun.</p></div>
+      <div><h3>Private Subnet</h3><p>Ichki serverlar va biznes ilovalarini himoyalash uchun.</p></div>
+      <div><h3>Security Groups</h3><p>Port va protokol bo‘yicha trafikni nazorat qiladi.</p></div>
+      <div><h3>Load Balancer</h3><p>Foydalanuvchi so‘rovlarini serverlar o‘rtasida taqsimlaydi.</p></div>
+      <div><h3>Auto Scaling</h3><p>Yuklama oshganda resurslarni avtomatik kengaytiradi.</p></div>
     </section>
   </main>
-
-  <footer>© 2026 ShopFlow Cloud Platform | Cloud Architecture</footer>
 </body>
 </html>

@@ -1,3 +1,14 @@
-# ShopFlow Cloud Platform
+# ShopFlow Secure Dashboard
 
-3 sahifali Pearson BTEC Networking in the Cloud demo web ilova.
+Pearson BTEC Level 4 Networking in the Cloud assignment uchun secure dashboard web ilova.
+
+## Login
+Username: admin  
+Password: admin123
+
+## Pages
+- index.html
+- dashboard.html
+- systems.html
+- architecture.html
+- monitoring.html
