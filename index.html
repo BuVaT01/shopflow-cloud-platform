@@ -3,74 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ShopFlow Cloud Platform</title>
+  <title>ShopFlow Cloud Platform | Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo">ShopFlow Cloud</div>
-      <ul class="nav-links">
-        <li><a href="#home">Bosh sahifa</a></li>
-        <li><a href="#services">Tizimlar</a></li>
-        <li><a href="#architecture">Bulut arxitekturasi</a></li>
-        <li><a href="#contact">Aloqa</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">ShopFlow Cloud</div>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="architecture.html">Cloud Architecture</a></li>
+    </ul>
+  </nav>
 
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>ERP, CRM va WMS tizimlari uchun bulutli platforma</h1>
-        <p>Tayyor kiyim-kechak mahsulotlarini ulgurji yetkazib beruvchi kompaniya uchun xavfsiz, kengayuvchan va masofadan boshqariladigan cloud yechim.</p>
-        <a href="#services" class="btn">Tizimlarni ko‘rish</a>
+  <header class="hero">
+    <div class="hero-text">
+      <span class="badge">AWS • GitHub • Vercel • Cloud Networking</span>
+      <h1>ERP, CRM va WMS tizimlari uchun professional bulutli platforma</h1>
+      <p>Tayyor kiyim-kechak mahsulotlarini ulgurji yetkazib beruvchi kompaniya uchun xavfsiz, kengayuvchan va masofadan boshqariladigan cloud network yechim.</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="services.html">Tizimlarni ko‘rish</a>
+        <a class="btn secondary" href="architecture.html">Arxitekturani ko‘rish</a>
       </div>
-    </section>
+    </div>
+    <div class="hero-panel">
+      <h3>Cloud Platform Status</h3>
+      <div class="status online">System Online</div>
+      <div class="metric"><span>Availability</span><strong>99.9%</strong></div>
+      <div class="metric"><span>Security</span><strong>Active</strong></div>
+      <div class="metric"><span>Deployment</span><strong>Vercel</strong></div>
+      <div class="metric"><span>Repository</span><strong>GitHub</strong></div>
+    </div>
   </header>
 
   <main>
-    <section id="services" class="section">
-      <h2>Biznes tizimlari</h2>
-      <div class="cards">
-        <div class="card"><h3>ERP</h3><p>Buyurtmalar, moliya, mahsulot oqimi va ichki biznes jarayonlarini markazlashgan boshqarish.</p></div>
-        <div class="card"><h3>CRM</h3><p>Mijozlar bilan aloqa, savdo jarayoni va xizmat ko‘rsatish sifatini yaxshilash.</p></div>
-        <div class="card"><h3>WMS</h3><p>Ombor zaxiralari, mahsulot harakati va logistika jarayonlarini real vaqt rejimida nazorat qilish.</p></div>
+    <section class="section">
+      <h2>Platformaning asosiy maqsadi</h2>
+      <p class="center-text">ShopFlow Cloud Platform kompaniyaning ERP, CRM va WMS tizimlarini yagona bulutli muhitda birlashtirish, foydalanuvchilarga masofadan xavfsiz kirish imkonini berish va biznes jarayonlarini uzluksiz qo‘llab-quvvatlash uchun ishlab chiqilgan.</p>
+      <div class="cards three">
+        <div class="card"><h3>Scalability</h3><p>Yuklama oshganda resurslarni kengaytirish va foydalanuvchilar soniga moslashish.</p></div>
+        <div class="card"><h3>Security</h3><p>HTTPS, firewall, security groups va access control orqali ma’lumotlarni himoyalash.</p></div>
+        <div class="card"><h3>Remote Access</h3><p>Xodimlar va mijozlarga istalgan joydan brauzer orqali tizimlardan foydalanish imkoniyati.</p></div>
       </div>
     </section>
 
-    <section id="architecture" class="section architecture">
-      <h2>Bulutli tarmoq yechimi</h2>
-      <div class="architecture-grid">
-        <div>
-          <h3>AWS asosidagi xavfsiz infratuzilma</h3>
-          <p>Platforma VPC, public/private subnet, load balancer, security group, monitoring va auto-scaling tamoyillariga mos tarzda loyihalashtirilgan.</p>
-        </div>
-        <ul class="features">
-          <li>HTTPS orqali xavfsiz ulanish</li>
-          <li>Masofaviy foydalanuvchilar uchun qulay kirish</li>
-          <li>ERP, CRM va WMS tizimlarini yagona platformada birlashtirish</li>
-          <li>Kengayuvchan va monitoring qilinadigan cloud muhit</li>
-        </ul>
+    <section class="section dashboard">
+      <h2>Business Dashboard Preview</h2>
+      <div class="dashboard-grid">
+        <div class="dash-card"><span>Buyurtmalar</span><strong>1,248</strong><small>ERP orqali boshqariladi</small></div>
+        <div class="dash-card"><span>Mijozlar</span><strong>376</strong><small>CRM orqali kuzatiladi</small></div>
+        <div class="dash-card"><span>Ombor zaxirasi</span><strong>18,940</strong><small>WMS orqali nazorat qilinadi</small></div>
+        <div class="dash-card"><span>Server holati</span><strong>Online</strong><small>Cloud monitoring faol</small></div>
       </div>
-    </section>
-
-    <section class="section stats">
-      <div class="stat"><span>99.9%</span><p>Xizmat mavjudligi maqsadi</p></div>
-      <div class="stat"><span>3</span><p>Asosiy biznes tizimi</p></div>
-      <div class="stat"><span>24/7</span><p>Masofaviy foydalanish</p></div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <h2>Aloqa</h2>
-      <p>Cloud Network Engineer tomonidan ishlab chiqilgan demo web ilova.</p>
-      <button onclick="showMessage()">Deploy holatini tekshirish</button>
-      <p id="message"></p>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 ShopFlow Cloud Platform. Pearson BTEC Networking in the Cloud assignment uchun demo.</p>
-  </footer>
-
-  <script src="script.js"></script>
+  <footer>© 2026 ShopFlow Cloud Platform | Pearson BTEC Networking in the Cloud</footer>
 </body>
 </html>
